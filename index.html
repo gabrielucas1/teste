@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Exemplo - Layout com CSS</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container header-inner">
+            <a href="#" class="brand">
+                <span class="logo" aria-hidden="true"></span>
+                Meu Projeto
+            </a>
+            <nav class="nav" aria-label="Navegação principal">
+                <a href="#">Início</a>
+                <a href="#features">Recursos</a>
+                <a href="#pricing">Preços</a>
+                <a href="#contact">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-inner">
+                <div>
+                    <h1>Crie interfaces limpas, rápidas e responsivas</h1>
+                    <p class="muted">Uma pequena demonstração de layout usando a folha de estilos disponível — componentes reutilizáveis, cards e botões prontos para serem adaptados ao seu projeto.</p>
+                    <div style="margin-top:1rem; display:flex; gap:0.5rem; flex-wrap:wrap;">
+                        <a class="btn" href="#features">Começar</a>
+                        <a class="btn secondary" href="#">Ver demo</a>
+                    </div>
+                </div>
+
+                <aside class="card card-lg" aria-hidden="true">
+                    <div class="card-header">
+                        <h3 class="card-title">Resumo rápido</h3>
+                        <span class="muted">Atualizado</span>
+                    </div>
+                    <div class="card-body">Design moderno, suporte a dark mode e componentes leves. Use como base para projetos pessoais ou protótipos rápidos.</div>
+                </aside>
+            </div>
+        </section>
+
+        <section id="features" class="container">
+            <h2 style="margin-top:0;">Recursos</h2>
+            <div class="grid">
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="card-title">Velocidade</h4>
+                        <small class="muted">otimizado</small>
+                    </div>
+                    <div class="card-body">CSS leve e organização de variáveis para personalização rápida.</div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="card-title">Acessibilidade</h4>
+                        <small class="muted">boa base</small>
+                    </div>
+                    <div class="card-body">Foco em contraste, foco visível e marcação semântica simples.</div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="card-title">Responsivo</h4>
+                        <small class="muted">mobile-first</small>
+                    </div>
+                    <div class="card-body">Layouts fluidos e que se adaptam com breakpoints simples já definidos no CSS.</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col muted">© 2025 Meu Projeto. Todos os direitos reservados.</div>
+                <div class="col text-center">Feito com <span style="color:var(--accent);">❤</span></div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
